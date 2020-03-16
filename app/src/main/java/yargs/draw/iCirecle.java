@@ -20,8 +20,6 @@ public class iCirecle extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-
-
         paint.setColor(0x99880000); // 设置颜色
         paint.setStyle(Paint.Style.FILL); // FILL 实心 STROKE空心 FILL_AND_STROKE两种模式一起
         paint.setStrokeWidth(0); // 设置线条宽度或点的宽度 上一个模式设为空心或者FILL_AND_STROKE才有用
@@ -75,10 +73,6 @@ public class iCirecle extends View {
 
 
 
-
-
-
-
         //绘制自定义形状 心形
         paint.setStyle(Paint.Style.FILL); // 画线模式
         Path pathA = new Path();
@@ -90,8 +84,6 @@ public class iCirecle extends View {
         //绘制自文字
         paint.setTextSize(50);
         canvas.drawText("大家好，我是张三", 50, 400, paint);
-
-
 
         //绘制直线 且闭合
         Path pathB = new Path();
@@ -109,10 +101,6 @@ public class iCirecle extends View {
         pathC.rQuadTo(350, 350,100,100); // 由当前位置 (100, 100) 向正右方 100 像素的位置画一
 //        pathC.close();
         canvas.drawPath(pathC,paint);
-
-
-
-
 
     }
 }

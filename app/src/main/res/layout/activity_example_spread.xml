@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".exampleSpread">
+        <yargs.draw.SpreadView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:spread_center_color="#ff4f02"
+            app:spread_delay_milliseconds="35"
+            app:spread_distance="5"
+            app:spread_max_radius="90"
+            app:spread_radius="150"
+            app:spread_spread_color="#ccc"
+            tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
