@@ -24,7 +24,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.setClass(MainActivity.this,exampleSpread.class);
         startActivity(intent);
-
     }
+    public  void goMenuSlide(View view){
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this,MenuSlide.class);
+        startActivity(intent);
+    }
+
+
 
 }
