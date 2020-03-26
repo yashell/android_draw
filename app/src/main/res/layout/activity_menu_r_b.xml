@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuRB">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/menusilde"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:onClick="onClick"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/item1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/menusilde1"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/item2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/menusilde2"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/item3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/menusilde3"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/item4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/menusilde4"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/item5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/menusilde4"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

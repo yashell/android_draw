@@ -20,9 +20,31 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public  void goAnimation(View view){
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this,Animation.class);
+        startActivity(intent);
+
+    }
     public  void goSpread(View view){
         Intent intent = new Intent();
         intent.setClass(MainActivity.this,exampleSpread.class);
+        startActivity(intent);
+    }
+
+    public  void goByteDance(View view){
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this,ByteDance.class);
+        startActivity(intent);
+    }
+    public  void goBicycle(View view){
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this,Bicycle.class);
+        startActivity(intent);
+    }
+    public  void goStartup(View view){
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this,Startup.class);
         startActivity(intent);
     }
     public  void goMenuSlide(View view){
@@ -30,6 +52,23 @@ public class MainActivity extends AppCompatActivity {
         intent.setClass(MainActivity.this,MenuSlide.class);
         startActivity(intent);
     }
+
+    public  void goMenu(View view){
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this,MenuRB.class);
+        startActivity(intent);
+    }
+
+    public  void goDazzle(View view){
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this,Dazzle.class);
+        startActivity(intent);
+    }
+
+
+
+
+
 
 
 

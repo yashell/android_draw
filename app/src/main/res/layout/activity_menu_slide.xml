@@ -8,20 +8,15 @@
 
 
     <RelativeLayout
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
-        android:layout_marginLeft="300dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         tools:ignore="MissingConstraints">
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:id="@+id/imageView_b"
-            android:src="@drawable/menu"
+            android:src="@drawable/menusilde4"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
 
@@ -29,7 +24,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:id="@+id/imageView_c"
-            android:src="@drawable/menu"
+            android:src="@drawable/menusilde1"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
 
@@ -37,7 +32,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:id="@+id/imageView_d"
-            android:src="@drawable/menu"
+            android:src="@drawable/menusilde2"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
 
@@ -45,7 +40,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:id="@+id/imageView_e"
-            android:src="@drawable/menu"
+            android:src="@drawable/menusilde3"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
 
@@ -55,7 +50,7 @@
             android:layout_height="30dp"
             android:layout_centerInParent="true"
             android:onClick="onClick"
-            android:src="@drawable/menu" />
+            android:src="@drawable/menusilde" />
 
     </RelativeLayout>
 
