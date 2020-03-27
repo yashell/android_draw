@@ -2,14 +2,19 @@ package com.example.drawtest;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
+
+import yargs.draw.broke.Broke;
 
 public class Startup extends AppCompatActivity {
     @Override
@@ -19,6 +24,22 @@ public class Startup extends AppCompatActivity {
         setContentView(R.layout.activity_startup);
         StartAnimation();
     }
+
+    public void gotoActive (final View view){
+         new Broke(Startup.this).explode(view,  new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                super.onAnimationEnd(animation);
+                view.setVisibility(View.GONE);
+                Intent i = new Intent(Startup.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
+//        new Broke(MainActivity.this).explode(view, null);
+    }
+
+
+
 
     private void StartAnimation(){
         ImageView imgA = (ImageView) findViewById(R.id.imgA) ;

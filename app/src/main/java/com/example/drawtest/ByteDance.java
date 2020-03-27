@@ -20,17 +20,16 @@ public class ByteDance extends AppCompatActivity {
 
     }
     public void tvTimer(View view) {
-        ValueAnimator valueAnimator = ValueAnimator.ofInt(0, 100);
+        ValueAnimator valueAnimator = ValueAnimator.ofInt(0, 432);
         valueAnimator.addUpdateListener(
                 new ValueAnimator.AnimatorUpdateListener() {
                     @Override
                     public void onAnimationUpdate(ValueAnimator animation) {
-                        text1.setText(
+                        ((TextView) text1).setText("$ " +
                                 (Integer) animation.getAnimatedValue());
                     }
                 });
-        valueAnimator.setDuration(3000);
+        valueAnimator.setDuration(1000);
         valueAnimator.start();
-
     }
 }

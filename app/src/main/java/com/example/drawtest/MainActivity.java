@@ -3,9 +3,13 @@ package com.example.drawtest;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import yargs.draw.broke.Broke;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,11 +18,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public  void goDraw(View view){
+    public  void goDraw( final View view){
         Intent intent = new Intent();
         intent.setClass(MainActivity.this,exampleDraw.class);
         startActivity(intent);
-
     }
     public  void goAnimation(View view){
         Intent intent = new Intent();
@@ -26,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public  void goRevealeffect(View view){
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this,Revealeffect.class);
+        startActivity(intent);
+    }
+
+
+
+
     public  void goSpread(View view){
         Intent intent = new Intent();
         intent.setClass(MainActivity.this,exampleSpread.class);
